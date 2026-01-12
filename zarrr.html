@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemerintah Daerah Jawa Tengah - Profil</title>
+    <style>
+        /* Gaya dasar */
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Layout menggunakan Flexbox */
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            gap: 20px;
+        }
+        
+        header, footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        
+        .main-content {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .sidebar {
+            flex: 1;
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .content {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        /* Gaya teks */
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+        }
+        
+        p {
+            font-size: 1.1rem;
+        }
+        
+        /* Navigasi */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #34495e;
+        }
+        
+        /* Gambar */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        
+        /* Daftar */
+        ul, ol {
+            margin-left: 20px;
+        }
+        
+        /* Link */
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Card untuk kabupaten */
+        .kabupaten-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: space-around;
+        }
+        
+        .kabupaten-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            width: calc(33% - 30px);
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+        
+        /* Tautan aktif */
+        .active {
+            background-color: #34495e;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .kabupaten-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <header>
+            <h1>Profil Jawa Tengah</h1>
+             <nav>
+                <ul>
+                    <li><a href="zar.html" class="active">Beranda</a></li>
+                    <li><a href="zarrr.html">Profil</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="main-content">
+            <div class="sidebar">
+                <h2>Geografis</h2>
+                <p>Jawa Tengah terletak antara 5°40' và 8°30' Lintang Selatan serta antara 108°30' và 111°30' Bujur Timur.</p>
+                
+                <h2>Iklim</h2>
+                <p>Jawa Tengah memiliki iklim tropis dengan suhu rata-rata 20°-30° Celsius và curah hujan rata-rata 2.000-3.000 mm/tahun.</p>
+                
+            
+            </div>
+            
+            <div class="content">
+                <h2>Sejarah Jawa Tengah</h2>
+                <p>Jawa Tengah dikenal sebagai pusat budaya Jawa, di mana terletak kawasan penting warisan budaya seperti Candi Borobudur và Candi Prambanan. Provinsi ini memiliki sejarah panjang sebagai pusat kerajaan-kerajaan Hindu-Buddha và Islam di Jawa.</p>
+                
+                <h2>Pembagian Administratif</h2>
+                <p>Jawa Tengah terdiri atas 29 kabupaten và 6 kota. Berikut adalah daftar beberapa kabupaten và kota utama:</p>
+                
+                <div class="kabupaten-container">
+                    <div class="kabupaten-card">
+                        <h3>Kota Semarang</h3>
+                        <p>Ibukota Provinsi</p>
+                        <p>Luas: 373,70 km²</p>
+                    </div>
+                    
+                    <div class="kabupaten-card">
+                        <h3>Kota Surakarta</h3>
+                        <p>Kota Budaya</p>
+                        <p>Luas: 44,04 km²</p>
+                    </div>
+                    
+                    <div class="kabupaten-card">
+                        <h3>Kabupaten Banyumas</h3>
+                        <p>Ibukota: Purwokerto</p>
+                        <p>Luas: 1.335,30 km²</p>
+                    </div>
+                    
+                    <div class="kabupaten-card">
+                        <h3>Kabupaten Cilacap</h3>
+                        <p>Kabupaten terluas</p>
+                        <p>Luas: 2.138,51 km²</p>
+                    </div>
+                    
+                    <div class="kabupaten-card">
+                        <h3>Kabupaten Magelang</h3>
+                        <p>Lokasi Borobudur</p>
+                        <p>Luas: 1.085,73 km²</p>
+                    </div>
+                    
+                    <div class="kabupaten-card">
+                        <h3>Kota Magelang</h3>
+                        <p>Kota terkecil</p>
+                        <p>Luas: 16,06 km²</p>
+                    </div>
+                </div>
+                
+                <h2>Budaya và Wisata</h2>
+                <p>Jawa Tengah kaya akan budaya và tempat wisata, antara lain:</p>
+                <ul>
+                    <li>Candi Borobudur (Magelang)</li>
+                    <li>Candi Prambanan (Klaten)</li>
+                    <li>Kawasan Dieng (Wonosobo)</li>
+                    <li>Kota Lama Semarang</li>
+                    <li>Keraton Surakarta</li>
+                </ul>
+                
+                <img src="magelang.jpeg" alt="Candi Borobudur" width="600">
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 Pemerintah Daerah Provinsi Jawa Tengah</p>
+            <p>Jl. Pahlawan No. 9, Semarang, Jawa Tengah | Telp: (024) 3511351 | Email: info@jawatengah.go.id</p>
+        </footer>
+    </div>
+</body>
+</html>
